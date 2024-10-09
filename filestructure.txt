@@ -1,0 +1,20 @@
+|-- .eslintrc.cjs
+|-- .gitignore
+|-- README.md
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- public
+    |-- vite.svg
+|-- src
+    |-- App.tsx
+    |-- assets
+    |-- index.css
+    |-- main.tsx
+    |-- pages
+        |-- Home.tsx
+    |-- vite-env.d.ts
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vite.config.ts
