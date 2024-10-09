@@ -9,10 +9,19 @@
 |-- src
     |-- App.tsx
     |-- assets
+    |-- components
+        |-- Loading.jsx
     |-- index.css
     |-- main.tsx
     |-- pages
+        |-- EntryQuoteImg.tsx
+        |-- FlowerBlood.tsx
+        |-- Gallary.tsx
         |-- Home.tsx
+        |-- LifeTrgImg.tsx
+        |-- QuestionPage.tsx
+        |-- Thoughts.tsx
+        |-- VOD.tsx
     |-- vite-env.d.ts
 |-- tsconfig.app.json
 |-- tsconfig.json
