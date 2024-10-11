@@ -2,9 +2,382 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.gwendolyn-font {
+    font-family: 'Gwendolyn', cursive;
+  }
+  
+  .hachi-maru-pop-font {
+    font-family: 'Hachi Maru Pop', cursive;
+  }
+  
+  .home-page-button {
+    --color: #a90000;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+  }
+  
+  .home-page-button::before,
+  .home-page-button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+  }
+  
+  .home-page-button::before {
+    top: -1em;
+    left: -1em;
+  }
+  
+  .home-page-button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+  
+  .home-page-button:hover::before,
+  .home-page-button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+  
+  .home-page-button:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .home-page-button:active {
+    filter: brightness(.8);
+  }
+  
 
 /* @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap'); */
 /* *{
     font-family: 'Gwendolyn', cursive;
 } */
+
+/* Body and html styles */
+.bdiv {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bdiv {
+    margin: 0;
+    padding: 0;
+    background: #29b6f6;
+  }
+  
+  /* Section and bubble styles */
+  .sticky-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .bubbles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .highest-z
+  {
+    z-index: 2;
+  }
+  .bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 10s infinite ease-in;
+  }
+  
+  /* Individual bubble styles */
+  .bubble-1 {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+  }
+  
+  .bubble-2 {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  
+  .bubble-3 {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-4 {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+  }
+  
+  .bubble-5 {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  
+  .bubble-6 {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-7 {
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-8 {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-9 {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  
+  .bubble-10 {
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+  }
+  
+  /* Animation for bubbles */
+  @keyframes rise {
+    0% {
+      bottom: -100px;
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      bottom: 1080px;
+      transform: translateX(-200px);
+    }
+  }
+  
+
+  /* Flower */
+  .gallery {
+    --s: 5rem; /* control the size */
+    display: grid;
+    grid: auto-flow var(--s) / repeat(3,var(--s));
+    place-items: center;
+    margin: calc(var(--s)/2);
+    transform: rotate(45deg);
+  }
+  .gallery > img {
+    width: 141%; /* sqrt(2)*100% */
+    aspect-ratio: 1;
+    object-fit: cover;
+    filter: grayscale(80%);
+    transform: scale(var(--_t,1)) rotate(-45deg);
+    clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+    cursor: pointer;
+    transition: .2s linear;
+  }
+  .gallery > img:hover {
+    filter: grayscale(0);
+    --_t: 1.15;
+  }
+  .flowerBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .layout {
+    display: flex;
+    justify-content: space-between; /* Space out children evenly */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Use full width */
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .popup-content img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+  }
+  
+
+  /* stars */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+  }
+  
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-45deg);
+  }
+  :root {
+    --primary-color: #ffffff; /* Set your primary color here */
+  }
+  .star {
+    --star-color: var(--primary-color);
+    --star-tail-length: 6em;
+    --star-tail-height: 2px;
+    --star-width: calc(var(--star-tail-length) / 6);
+    --fall-duration: 9s;
+    --tail-fade-duration: var(--fall-duration);
+    
+    position: absolute;
+    top: var(--top-offset);
+    left: 0;
+    width: var(--star-tail-length);
+    height: var(--star-tail-height);
+    color: var(--star-color);
+    background: linear-gradient(45deg, currentColor, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px currentColor);
+    transform: translate3d(104em, 0, 0);
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+  }
+  
+  .star::before,
+  .star::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: calc(var(--star-width) / -2);
+    width: var(--star-width);
+    height: 100%;
+    background: linear-gradient(45deg, transparent, currentColor, transparent);
+    border-radius: inherit;
+    animation: blink 2s linear infinite;
+  }
+  
+  .star::before {
+    transform: rotate(45deg);
+  }
+  
+  .star::after {
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translate3d(-30em, 0, 0);
+    }
+  }
+  
+  @keyframes tail-fade {
+    0%, 50% {
+      width: var(--star-tail-length);
+      opacity: 1;
+    }
+  
+    70%, 80% {
+      width: 0;
+      opacity: 0.4;
+    }
+  
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
