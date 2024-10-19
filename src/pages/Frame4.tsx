@@ -5,7 +5,7 @@ function Frame4() {
   return (
     <>
    <div className="h-screen w-screen m-0 overflow-hidden">
-      <div className="h-full w-full bg-gradient-to-b from-[#C6E4EE] via-[#C6E4EE] via-40% via-[#FED1AE] via-60% via-[#FAA0B9] via-70% via-[#CB7DCB] via-80% to-[#757ECB]">
+      <div className="h-full w-full bg-gradient-to-b from-[#C6E4EE] via-[#C6E4EE] via-40% via-[#FED1AE] via-60% via-[#FAA0B9] via-70% via-[#CB7DCB] via-80% to-[#757ECB] ">
       <span
             onClick={() => navigation('/frame3')}
             className="absolute top-6 left-6 text-base pr-10 cursor-pointer text-black"
@@ -13,12 +13,12 @@ function Frame4() {
             {'<----back'}
           </span>
 
-      <div className="flex items-center justify-center min-h-screen">
-  <div className="flex flex-col w-full max-w-4xl border border-gray-300 rounded-lg">
+      <div className="flex items-center justify-center min-h-screen ">
+  <div className="flex flex-col w-full max-w-5xl  ">
     <div className="flex flex-row">
-      <div className="flex-1 p-4">
+      <div className="flex-1 p-4 cursor-pointer" >
 
-      <div className="card">
+      <div className="card" onClick={() => navigation('/frame5')}>
   <img src="frame4/PicLeft.gif" alt="" />
   <div className="card__content">
     <p className="card__title">Happy anniversary Kritik💖
@@ -32,8 +32,8 @@ function Frame4() {
       </div>
       <div className="flex-1 p-4 flex items-center justify-center">
   
-<svg width="100px" height="100px" viewBox="0 0 512 512" version="1.1">
-<g className="st0" id="Layer_1"/>
+<svg className='cursor-pointer' width="100px" height="100px" viewBox="0 0 512 512" version="1.1">
+<g className="st0 " id="Layer_1"/>
 
 <g id="Layer_2">
 
@@ -69,13 +69,13 @@ function Frame4() {
 
 </svg>
       </div>
-      <div className="flex-1 p-4">
-      <div className="card">
+      <div className="flex-1 p-4" >
+      <div className="card cursor-pointer"  onClick={() => navigation('/frame6')}>
   <img src="frame4/PicRight.jpg" alt="" />
   <div className="card__content">
     <p className="card__title">Dear Kritik💖
-    </p><p className="card__description">I have Selected Some <b>Quotes</b> Some Words ... Just For You ... <br/><br/>
-    I might can't be there ... But my heart follows you, even in rain , storm, Sunlight , Night ... No matter what My heart will always Write about You and for you Only...<br/><br/>
+    </p><p className="card__description">I have Selected Some <b>Quotes</b> Some Words and songs ... Just For You ... <br/><br/>
+    I might can't be there ... But my heart follows you, even in rain , storm, Sunlight , Night ... No matter what My heart will always Write about You and dedicate to u and for you Only...<br/><br/>
     Because <b>All I Have is you</b> and all I want ... <br/><br/>
     <b>Is You only...</b> 
 
@@ -87,8 +87,8 @@ function Frame4() {
       </div>
     </div>
     <div className="w-full p-4 mt-auto">
-<div
-  className="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-auto h-35 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200"
+<div 
+  className="cursor-pointer overflow-hidden relative transition-all duration-500 hover:translate-y-2 w-auto h-35 bg-neutral-50 rounded-lg shadow-xl flex flex-row items-center justify-evenly gap-2 p-2 before:absolute before:w-full hover:before:top-0 before:duration-500 before:-top-1 before:h-1 before:bg-purple-200" onClick={() => navigation('/frame7')}
 >
 <svg width="100px" height="100px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 
@@ -212,7 +212,7 @@ function Frame4() {
   <div>
     <span className="font-bold"> A Small video Of Me</span>
     <p className="line-clamp-3">
-     I am truly Sorry For the pain i gave ... I want to heal this ... I want you my partner, I want you , Please help me to improve my self ... Make me the heigh value men , I will trust the process and you ... So please Hold my hands and Help me to be better with you , beside you , togethe❤️😊( click )
+     I am truly Sorry For the pain i gave ... I want to heal this ... I want you my partner, I want you , Please help us to improve our self ... Make me the heigh value men , I will trust the process and you ... So please Hold my hands and Help our bonding to be better , beside you , togethe❤️😊( click )
     
     </p>
   </div>
