@@ -1,4 +1,3 @@
-import React from 'react';
 import top from '../img/top.png'
 import bottom from '../img/bottom.png'
 import { useNavigate } from 'react-router-dom';
